@@ -1,6 +1,8 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
-import { BiMailSend, BiPhoneCall, BiSupport } from "react-icons/bi";
+//import { BiMailSend, BiPhoneCall, BiSupport } from "react-icons/bi";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faHeadset } from '@fortawesome/free-solid-svg-icons'
 const Contact = () => {
   return (
     <Layout title={"Contact us"}>
@@ -21,10 +23,10 @@ const Contact = () => {
           Whether you prefer email, phone, or social media, we're always ready to lend an ear and assist you in any way we can. 
           </p>
           <p className="mt-3">
-            <BiMailSend /> : www.help@ecommerceapp.com
+          <FontAwesomeIcon icon={faEnvelope} />: www.help@ecommerceapp.com
           </p>
           <p className="mt-3">
-            <BiSupport /> : 1800-0000-0000 (toll free)
+          <FontAwesomeIcon icon={faHeadset} />: 1800-0000-0000 (toll free)
           </p>
         </div>
         
